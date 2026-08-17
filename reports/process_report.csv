@@ -1,0 +1,269 @@
+timestamp,pid,ppid,name,path,username,status
+2026-08-17 20:44:34,0,0,System Idle Process,,NT AUTHORITY\SYSTEM,running
+2026-08-17 20:44:34,4,0,System,,NT AUTHORITY\SYSTEM,running
+2026-08-17 20:44:34,236,4,,,,stopped
+2026-08-17 20:44:34,280,4,Registry,Registry,,running
+2026-08-17 20:44:34,932,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:34,944,4,smss.exe,C:\Windows\System32\smss.exe,,running
+2026-08-17 20:44:34,980,1484,dwm.exe,C:\Windows\System32\dwm.exe,,running
+2026-08-17 20:44:34,1296,1084,csrss.exe,C:\Windows\System32\csrss.exe,,running
+2026-08-17 20:44:34,1384,1084,wininit.exe,C:\Windows\System32\wininit.exe,,running
+2026-08-17 20:44:34,1392,1376,csrss.exe,C:\Windows\System32\csrss.exe,,running
+2026-08-17 20:44:34,1484,1376,winlogon.exe,C:\Windows\System32\winlogon.exe,,running
+2026-08-17 20:44:34,1504,1384,services.exe,C:\Windows\System32\services.exe,,running
+2026-08-17 20:44:34,1536,1384,LsaIso.exe,C:\Windows\System32\LsaIso.exe,,running
+2026-08-17 20:44:34,1556,1384,lsass.exe,C:\Windows\System32\lsass.exe,,running
+2026-08-17 20:44:34,1616,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,1628,1504,WUDFHost.exe,C:\Windows\System32\WUDFHost.exe,,running
+2026-08-17 20:44:34,1660,1700,SystemSettings.exe,C:\Windows\ImmersiveControlPanel\SystemSettings.exe,VASANTHA\nitin,stopped
+2026-08-17 20:44:34,1700,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,1732,1384,fontdrvhost.exe,C:\Windows\System32\fontdrvhost.exe,,running
+2026-08-17 20:44:34,1740,1484,fontdrvhost.exe,C:\Windows\System32\fontdrvhost.exe,,running
+2026-08-17 20:44:34,1748,1504,WUDFHost.exe,C:\Windows\System32\WUDFHost.exe,,running
+2026-08-17 20:44:34,1856,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,1916,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,1924,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,1960,1504,WUDFHost.exe,C:\Windows\System32\WUDFHost.exe,,running
+2026-08-17 20:44:34,2020,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2060,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2068,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2268,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2336,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2344,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2364,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2384,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2392,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2404,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2512,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2520,1504,IntelCpHDCPSvc.exe,C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_68fe65fbc646d3a4\IntelCpHDCPSvc.exe,,running
+2026-08-17 20:44:34,2536,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2572,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2576,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2588,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2664,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2676,21580,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,VASANTHA\nitin,running
+2026-08-17 20:44:34,2752,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2852,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2860,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,2876,8516,BraveCrashHandler.exe,C:\Program Files (x86)\BraveSoftware\Update\1.3.361.151\BraveCrashHandler.exe,,running
+2026-08-17 20:44:34,2912,21580,OpenConsole.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\a5b5009513\resources\app\node_modules.asar.unpacked\node-pty\build\Release\conpty\OpenConsole.exe,VASANTHA\nitin,running
+2026-08-17 20:44:34,3016,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:34,3084,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,3128,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,3304,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,3312,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,3320,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:34,3388,1700,ApplicationFrameHost.exe,C:\Windows\System32\ApplicationFrameHost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:34,3392,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:34,3540,4,MemCompression,MemCompression,,running
+2026-08-17 20:44:35,3596,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,3660,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,3668,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,3708,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,3756,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,3784,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,3840,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,3948,1504,spoolsv.exe,C:\Windows\System32\spoolsv.exe,,running
+2026-08-17 20:44:35,4004,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4012,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4140,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4216,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4228,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,4280,8516,BraveCrashHandler64.exe,C:\Program Files (x86)\BraveSoftware\Update\1.3.361.151\BraveCrashHandler64.exe,,running
+2026-08-17 20:44:35,4404,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4412,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4428,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4484,1504,OfficeClickToRun.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,,running
+2026-08-17 20:44:35,4492,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4504,1504,RtkAudUService64.exe,C:\Windows\System32\DriverStore\FileRepository\realtekservice.inf_amd64_0c755fff65745edd\RtkAudUService64.exe,,running
+2026-08-17 20:44:35,4512,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4528,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4536,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4540,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4556,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4572,1504,MpDefenderCoreService.exe,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26070.9-0\MpDefenderCoreService.exe,,running
+2026-08-17 20:44:35,4580,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4616,1504,MsMpEng.exe,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26070.9-0\MsMpEng.exe,,running
+2026-08-17 20:44:35,4624,1504,Sysmon64.exe,C:\Windows\Sysmon64.exe,,running
+2026-08-17 20:44:35,4780,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,4812,1504,ipf_uf.exe,C:\Windows\System32\DriverStore\FileRepository\ipf_cpu.inf_amd64_7218f3b363a821fe\ipf_uf.exe,,running
+2026-08-17 20:44:35,4820,1504,DbxSvc.exe,C:\Windows\System32\DbxSvc.exe,,running
+2026-08-17 20:44:35,4828,1504,servicehost.exe,C:\Program Files\McAfee\WebAdvisor\servicehost.exe,,running
+2026-08-17 20:44:35,4848,17432,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,4856,1504,vmnat.exe,C:\Windows\SysWOW64\vmnat.exe,,running
+2026-08-17 20:44:35,4864,1504,jhi_service.exe,C:\Windows\System32\DriverStore\FileRepository\dal.inf_amd64_af50fdb80983f7bc\jhi_service.exe,,running
+2026-08-17 20:44:35,4892,1504,ipfsvc.exe,C:\Windows\System32\DriverStore\FileRepository\dtt_sw.inf_amd64_d6f52e3fdecf287d\ipfsvc.exe,,running
+2026-08-17 20:44:35,4996,1504,IntelAudioService.exe,C:\Windows\System32\DriverStore\FileRepository\intcoed.inf_amd64_673570ff175bfc85\AS\IAS\IntelAudioService.exe,,running
+2026-08-17 20:44:35,5028,1504,WMIRegistrationService.exe,C:\Windows\System32\DriverStore\FileRepository\mewmiprov.inf_amd64_d51901c26227fb29\WMIRegistrationService.exe,,running
+2026-08-17 20:44:35,5188,1504,vmnetdhcp.exe,C:\Windows\SysWOW64\vmnetdhcp.exe,,running
+2026-08-17 20:44:35,5216,17432,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,5240,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,5304,1504,vmware-authd.exe,C:\Program Files (x86)\VMware\VMware Workstation\vmware-authd.exe,,running
+2026-08-17 20:44:35,5336,1504,vmware-usbarbitrator64.exe,C:\Program Files (x86)\Common Files\VMware\USB\vmware-usbarbitrator64.exe,,running
+2026-08-17 20:44:35,5388,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,5404,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:35,5464,8824,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,5684,1700,WmiPrvSE.exe,C:\Windows\System32\wbem\WmiPrvSE.exe,,running
+2026-08-17 20:44:35,5724,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,5788,9420,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,5856,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:35,6120,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,6496,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,6504,1700,unsecapp.exe,C:\Windows\System32\wbem\unsecapp.exe,,running
+2026-08-17 20:44:36,6708,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,7432,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,7548,1504,IntelGraphicsSoftware.Service.exe,C:\Program Files\WindowsApps\AppUp.IntelArcSoftware_26.18.2353.0_x64__8j3eq9eme6ctt\VFS\ProgramFilesX64\Intel\Intel Graphics Software\IntelGraphicsSoftware.Service.exe,,running
+2026-08-17 20:44:36,7648,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,7708,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,7732,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,7812,2852,sihost.exe,C:\Windows\System32\sihost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,7824,1700,CrossDeviceService.exe,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26062.105.0_x64__cw5n1h2txyewy\CrossDeviceService.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,7904,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,7916,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,7964,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,7972,13072,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8004,4812,ipf_helper.exe,C:\Windows\System32\DriverStore\FileRepository\ipf_cpu.inf_amd64_7218f3b363a821fe\ipf_helper.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8020,4828,uihost.exe,C:\Program Files\McAfee\WebAdvisor\uihost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8324,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8468,3084,wlanext.exe,C:\Windows\System32\wlanext.exe,,running
+2026-08-17 20:44:36,8524,2384,taskhostw.exe,C:\Windows\System32\taskhostw.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8668,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8704,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,8780,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,8824,11152,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8880,8824,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,8948,1700,AppActions.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\AppActions.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,9084,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,9144,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,9156,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,9300,4540,AggregatorHost.exe,C:\Windows\System32\AggregatorHost.exe,,running
+2026-08-17 20:44:36,9420,9344,explorer.exe,C:\Windows\explorer.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,9544,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,9612,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,9856,1504,SecurityHealthService.exe,C:\Windows\System32\SecurityHealthService.exe,,running
+2026-08-17 20:44:36,9880,7812,CrossDeviceResume.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\CrossDeviceResume.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,9992,7548,PresentMonService.exe,C:\Program Files\WindowsApps\AppUp.IntelArcSoftware_26.18.2353.0_x64__8j3eq9eme6ctt\VFS\ProgramFilesX64\Intel\Intel Graphics Software\PresentMonService.exe,,running
+2026-08-17 20:44:36,10048,9992,conhost.exe,C:\Windows\System32\conhost.exe,,running
+2026-08-17 20:44:36,10164,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,10272,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:36,10284,1700,StartMenuExperienceHost.exe,C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10312,1700,SearchHost.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10352,17432,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10412,10272,NgcIso.exe,C:\Windows\System32\NgcIso.exe,,running
+2026-08-17 20:44:36,10436,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10596,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10652,1700,Widgets.exe,C:\Program Files\WindowsApps\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy\Dashboard\Widgets.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10740,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10748,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10888,1700,WidgetService.exe,C:\Program Files\WindowsApps\Microsoft.WidgetsPlatformRuntime_1.6.19.0_x64__8wekyb3d8bbwe\WidgetService\WidgetService.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,10904,13476,python.exe,C:\Program Files\Python310\python.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,11152,18152,M365Copilot.exe,C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_19.2608.41021.0_x64__8wekyb3d8bbwe\M365Copilot.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,11260,1700,ShellExperienceHost.exe,C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe,VASANTHA\nitin,stopped
+2026-08-17 20:44:36,11376,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,11412,3784,audiodg.exe,C:\Windows\System32\audiodg.exe,,running
+2026-08-17 20:44:36,11528,10312,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,11836,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,11964,1700,SDXHelper.exe,C:\Program Files\Microsoft Office\root\Office16\SDXHelper.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,12032,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,12116,3840,ctfmon.exe,C:\Windows\System32\ctfmon.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,12180,9420,SecurityHealthSystray.exe,C:\Windows\System32\SecurityHealthSystray.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,12240,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,12352,1504,SearchIndexer.exe,C:\Windows\System32\SearchIndexer.exe,,running
+2026-08-17 20:44:36,12472,1504,svchost.exe,C:\Windows\System32\svchost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:36,12528,1700,PhoneExperienceHost.exe,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26062.145.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,12720,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,12888,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,12912,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13032,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13072,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13184,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13216,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13356,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13372,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:37,13476,2676,python.exe,C:\Users\nitin\OneDrive\Desktop\Windows-Service-Process-Monitor\venv\Scripts\python.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13496,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13560,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:37,13584,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:37,13860,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13872,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,13932,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,14040,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,14116,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,14456,5788,cmd.exe,C:\Windows\System32\cmd.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,14464,14456,conhost.exe,C:\Windows\System32\conhost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,14504,14456,browserhost.exe,C:\Program Files\McAfee\WebAdvisor\browserhost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,14788,1700,UserOOBEBroker.exe,C:\Windows\System32\oobe\UserOOBEBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15032,1504,NisSrv.exe,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26070.9-0\NisSrv.exe,,running
+2026-08-17 20:44:37,15052,1700,TextInputHost.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15140,2384,JSRtMon2.exe,C:\Program Files (x86)\Acer\Jumpstart Agent\JSRtMon2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15488,9420,RtkAudUService64.exe,C:\Windows\System32\DriverStore\FileRepository\realtekservice.inf_amd64_0c755fff65745edd\RtkAudUService64.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15496,8824,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15564,9420,ms-teams.exe,C:\Program Files\WindowsApps\MSTeams_26198.304.4946.9672_x64__8wekyb3d8bbwe\ms-teams.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15800,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15900,15564,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15908,1700,LockApp.exe,C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy\LockApp.exe,VASANTHA\nitin,stopped
+2026-08-17 20:44:37,15928,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15940,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,15976,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,16244,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,16252,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,16352,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,16392,9420,SnippingTool.exe,C:\Program Files\WindowsApps\Microsoft.ScreenSketch_11.2602.49.0_x64__8wekyb3d8bbwe\SnippingTool\SnippingTool.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,16480,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,16552,9420,ONENOTEM.EXE,C:\Program Files\Microsoft Office\root\Office16\ONENOTEM.EXE,VASANTHA\nitin,running
+2026-08-17 20:44:37,17028,17432,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,17172,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:37,17400,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:37,17432,7988,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,17608,11032,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,17812,7812,WhatsApp.Root.exe,C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2631.102.0_x64__cv1g1gvanyjgm\WhatsApp.Root.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,17872,21944,pet.exe,C:\Users\nitin\.vscode\extensions\ms-python.vscode-python-envs-1.36.0-win32-x64\python-env-tools\bin\pet.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,17880,12352,SearchProtocolHost.exe,C:\Windows\System32\SearchProtocolHost.exe,,running
+2026-08-17 20:44:37,18592,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,18804,17812,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,18840,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,18848,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,18972,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:37,19060,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:37,19164,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,19292,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:37,19428,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,19436,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,19532,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,19652,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,19656,11032,vmware-tray.exe,C:\Program Files (x86)\VMware\VMware Workstation\vmware-tray.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,19692,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,19916,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:38,19956,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:38,19996,9420,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,20024,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,20044,21580,OpenConsole.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\a5b5009513\resources\app\node_modules.asar.unpacked\node-pty\build\Release\conpty\OpenConsole.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,20136,2384,taskhostw.exe,C:\Windows\System32\taskhostw.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,20532,1700,smartscreen.exe,C:\Windows\System32\smartscreen.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,20972,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21016,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21108,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:38,21296,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21320,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running
+2026-08-17 20:44:38,21324,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21348,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21404,21944,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21580,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21608,7812,ShellHost.exe,C:\Windows\System32\ShellHost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21664,8824,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21724,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21872,17432,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,21944,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,22480,8824,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,22492,1504,elevation_service.exe,C:\Program Files (x86)\Microsoft\Edge\Application\151.0.4129.86\elevation_service.exe,,running
+2026-08-17 20:44:38,22556,1700,RuntimeBroker.exe,C:\Windows\System32\RuntimeBroker.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,22652,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,22756,23020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,22776,21944,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,23020,9420,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,23636,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,23872,17432,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,23912,21580,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,24108,17872,conhost.exe,C:\Windows\System32\conhost.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,24224,19996,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,VASANTHA\nitin,running
+2026-08-17 20:44:38,24544,1504,svchost.exe,C:\Windows\System32\svchost.exe,,running

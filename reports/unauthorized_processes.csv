@@ -1,0 +1,138 @@
+timestamp,severity,pid,ppid,name,path,username,status,reason
+2026-08-17 16:35:36,MEDIUM,0,0,System Idle Process,,NT AUTHORITY\SYSTEM,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,1384,1084,wininit.exe,C:\Windows\System32\wininit.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,1424,17388,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,1536,1384,LsaIso.exe,C:\Windows\System32\LsaIso.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,1628,1504,WUDFHost.exe,C:\Windows\System32\WUDFHost.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,1660,1700,SystemSettings.exe,C:\Windows\ImmersiveControlPanel\SystemSettings.exe,VASANTHA\nitin,stopped,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,1748,1504,WUDFHost.exe,C:\Windows\System32\WUDFHost.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,1960,1504,WUDFHost.exe,C:\Windows\System32\WUDFHost.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,2520,1504,IntelCpHDCPSvc.exe,C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_68fe65fbc646d3a4\IntelCpHDCPSvc.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,2572,1504,elevation_service.exe,C:\Program Files (x86)\Microsoft\Edge\Application\151.0.4129.86\elevation_service.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,2876,8516,BraveCrashHandler.exe,C:\Program Files (x86)\BraveSoftware\Update\1.3.361.151\BraveCrashHandler.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,2892,17388,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,3008,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,3388,1700,ApplicationFrameHost.exe,C:\Windows\System32\ApplicationFrameHost.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,3392,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,3540,4,MemCompression,MemCompression,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4212,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4228,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4280,8516,BraveCrashHandler64.exe,C:\Program Files (x86)\BraveSoftware\Update\1.3.361.151\BraveCrashHandler64.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4484,1504,OfficeClickToRun.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4504,1504,RtkAudUService64.exe,C:\Windows\System32\DriverStore\FileRepository\realtekservice.inf_amd64_0c755fff65745edd\RtkAudUService64.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4572,1504,MpDefenderCoreService.exe,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26070.9-0\MpDefenderCoreService.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4616,1504,MsMpEng.exe,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26070.9-0\MsMpEng.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4624,1504,Sysmon64.exe,C:\Windows\Sysmon64.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4812,1504,ipf_uf.exe,C:\Windows\System32\DriverStore\FileRepository\ipf_cpu.inf_amd64_7218f3b363a821fe\ipf_uf.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4820,1504,DbxSvc.exe,C:\Windows\System32\DbxSvc.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4828,1504,servicehost.exe,C:\Program Files\McAfee\WebAdvisor\servicehost.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4856,1504,vmnat.exe,C:\Windows\SysWOW64\vmnat.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4864,1504,jhi_service.exe,C:\Windows\System32\DriverStore\FileRepository\dal.inf_amd64_af50fdb80983f7bc\jhi_service.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4892,1504,ipfsvc.exe,C:\Windows\System32\DriverStore\FileRepository\dtt_sw.inf_amd64_d6f52e3fdecf287d\ipfsvc.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,4996,1504,IntelAudioService.exe,C:\Windows\System32\DriverStore\FileRepository\intcoed.inf_amd64_673570ff175bfc85\AS\IAS\IntelAudioService.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5028,1504,WMIRegistrationService.exe,C:\Windows\System32\DriverStore\FileRepository\mewmiprov.inf_amd64_d51901c26227fb29\WMIRegistrationService.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5188,1504,vmnetdhcp.exe,C:\Windows\SysWOW64\vmnetdhcp.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5304,1504,vmware-authd.exe,C:\Program Files (x86)\VMware\VMware Workstation\vmware-authd.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5336,1504,vmware-usbarbitrator64.exe,C:\Program Files (x86)\Common Files\VMware\USB\vmware-usbarbitrator64.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5684,1700,WmiPrvSE.exe,C:\Windows\System32\wbem\WmiPrvSE.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5724,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5788,9420,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,5912,9420,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,6036,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,6288,15256,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,6496,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,6504,1700,unsecapp.exe,C:\Windows\System32\wbem\unsecapp.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,6544,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,6708,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,7548,1504,IntelGraphicsSoftware.Service.exe,C:\Program Files\WindowsApps\AppUp.IntelArcSoftware_26.18.2353.0_x64__8j3eq9eme6ctt\VFS\ProgramFilesX64\Intel\Intel Graphics Software\IntelGraphicsSoftware.Service.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,7824,1700,CrossDeviceService.exe,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26062.105.0_x64__cw5n1h2txyewy\CrossDeviceService.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,7960,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,7964,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8004,4812,ipf_helper.exe,C:\Windows\System32\DriverStore\FileRepository\ipf_cpu.inf_amd64_7218f3b363a821fe\ipf_helper.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8020,4828,uihost.exe,C:\Program Files\McAfee\WebAdvisor\uihost.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8272,15256,pet.exe,C:\Users\nitin\.vscode\extensions\ms-python.vscode-python-envs-1.36.0-win32-x64\python-env-tools\bin\pet.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8376,10020,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8468,3084,wlanext.exe,C:\Windows\System32\wlanext.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8592,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8756,18156,OpenConsole.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\a5b5009513\resources\app\node_modules.asar.unpacked\node-pty\build\Release\conpty\OpenConsole.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,8948,1700,AppActions.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\AppActions.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,9144,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,9300,4540,AggregatorHost.exe,C:\Windows\System32\AggregatorHost.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,9500,7812,ShellHost.exe,C:\Windows\System32\ShellHost.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,9856,1504,SecurityHealthService.exe,C:\Windows\System32\SecurityHealthService.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,9880,7812,CrossDeviceResume.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\CrossDeviceResume.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,9992,7548,PresentMonService.exe,C:\Program Files\WindowsApps\AppUp.IntelArcSoftware_26.18.2353.0_x64__8j3eq9eme6ctt\VFS\ProgramFilesX64\Intel\Intel Graphics Software\PresentMonService.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,10020,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,10096,12352,SearchProtocolHost.exe,C:\Windows\System32\SearchProtocolHost.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,10412,10272,NgcIso.exe,C:\Windows\System32\NgcIso.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,10652,1700,Widgets.exe,C:\Program Files\WindowsApps\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy\Dashboard\Widgets.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,10804,12352,SearchFilterHost.exe,C:\Windows\System32\SearchFilterHost.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,10888,1700,WidgetService.exe,C:\Program Files\WindowsApps\Microsoft.WidgetsPlatformRuntime_1.6.19.0_x64__8wekyb3d8bbwe\WidgetService\WidgetService.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,11260,1700,ShellExperienceHost.exe,C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,11360,1700,LockApp.exe,C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy\LockApp.exe,VASANTHA\nitin,stopped,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,11528,10312,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,12032,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,12180,9420,SecurityHealthSystray.exe,C:\Windows\System32\SecurityHealthSystray.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,12352,1504,SearchIndexer.exe,C:\Windows\System32\SearchIndexer.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,12528,1700,PhoneExperienceHost.exe,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26062.145.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,12720,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,12888,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,12912,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,13032,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,13184,11528,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,13216,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,13356,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,13860,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,13872,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,13932,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,14040,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,14048,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,14116,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,14504,14456,browserhost.exe,C:\Program Files\McAfee\WebAdvisor\browserhost.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,14788,1700,UserOOBEBroker.exe,C:\Windows\System32\oobe\UserOOBEBroker.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15032,1504,NisSrv.exe,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26070.9-0\NisSrv.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15052,1700,TextInputHost.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15140,2384,JSRtMon2.exe,C:\Program Files (x86)\Acer\Jumpstart Agent\JSRtMon2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15256,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15488,9420,RtkAudUService64.exe,C:\Windows\System32\DriverStore\FileRepository\realtekservice.inf_amd64_0c755fff65745edd\RtkAudUService64.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15564,9420,ms-teams.exe,C:\Program Files\WindowsApps\MSTeams_26198.304.4946.9672_x64__8wekyb3d8bbwe\ms-teams.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15900,15564,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15928,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15940,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,15976,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16244,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16252,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16352,15900,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16480,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16552,9420,ONENOTEM.EXE,C:\Program Files\Microsoft Office\root\Office16\ONENOTEM.EXE,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16576,18156,OpenConsole.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\a5b5009513\resources\app\node_modules.asar.unpacked\node-pty\build\Release\conpty\OpenConsole.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16752,17388,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,16876,17388,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,17072,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,17388,9420,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,17608,11032,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,17640,17388,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,17732,9420,mscopilot.exe,C:\Program Files (x86)\Microsoft\Copilot\Application\mscopilot.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,17812,7812,WhatsApp.Root.exe,C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2631.102.0_x64__cv1g1gvanyjgm\WhatsApp.Root.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,17880,17732,mscopilot.exe,C:\Program Files (x86)\Microsoft\Copilot\Application\mscopilot.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18068,1504,elevation_service.exe,C:\Program Files (x86)\Microsoft\Copilot\Application\150.0.4078.96\elevation_service.exe,,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18076,17732,mscopilot.exe,C:\Program Files (x86)\Microsoft\Copilot\Application\mscopilot.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18084,17732,mscopilot.exe,C:\Program Files (x86)\Microsoft\Copilot\Application\mscopilot.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18120,17732,mscopilot.exe,C:\Program Files (x86)\Microsoft\Copilot\Application\mscopilot.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18152,7812,m365copilot_autostarter.exe,C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_19.2608.41021.0_x64__8wekyb3d8bbwe\m365copilot_autostarter.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18156,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18804,17812,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18840,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,18848,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,19128,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,19164,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,19428,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,19436,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,19652,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,19656,11032,vmware-tray.exe,C:\Program Files (x86)\VMware\VMware Workstation\vmware-tray.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,19692,18804,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\151.0.4129.86\msedgewebview2.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,20132,17388,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,20468,5788,brave.exe,C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,20972,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,21016,17608,Dropbox.exe,C:\Program Files (x86)\Dropbox\Client\Dropbox.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
+2026-08-17 16:35:36,MEDIUM,21080,5912,Code.exe,C:\Users\nitin\AppData\Local\Programs\Microsoft VS Code\Code.exe,VASANTHA\nitin,running,Process is not present in the configured allowlist.
