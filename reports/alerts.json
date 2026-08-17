@@ -1,9 +1,9 @@
 {
-    "generated_at": "2026-08-17 17:11:00",
-    "total_alerts": 139,
+    "generated_at": "2026-08-17 18:00:11",
+    "total_alerts": 149,
     "alerts": [
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 0,
             "ppid": 0,
@@ -15,7 +15,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 472,
+            "ppid": 1700,
+            "name": "smartscreen.exe",
+            "path": "C:\\Windows\\System32\\smartscreen.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 1384,
             "ppid": 1084,
@@ -27,7 +39,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 1536,
             "ppid": 1384,
@@ -39,7 +51,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 1628,
             "ppid": 1504,
@@ -51,7 +63,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 1660,
             "ppid": 1700,
@@ -63,7 +75,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 1748,
             "ppid": 1504,
@@ -75,7 +87,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 1816,
+            "ppid": 1504,
+            "name": "elevation_service.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\151.0.4129.86\\elevation_service.exe",
+            "username": null,
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 1960,
             "ppid": 1504,
@@ -87,7 +111,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 1996,
+            "ppid": 9540,
+            "name": "msedge.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 2520,
             "ppid": 1504,
@@ -99,7 +135,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 2800,
+            "ppid": 3784,
+            "name": "audiodg.exe",
+            "path": "C:\\Windows\\System32\\audiodg.exe",
+            "username": null,
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 2876,
             "ppid": 8516,
@@ -111,7 +159,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 3008,
             "ppid": 5912,
@@ -123,7 +171,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 3388,
             "ppid": 1700,
@@ -135,7 +183,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 3392,
             "ppid": 17608,
@@ -147,7 +195,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 3540,
             "ppid": 4,
@@ -159,19 +207,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 4208,
-            "ppid": 5788,
-            "name": "brave.exe",
-            "path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4212,
             "ppid": 5912,
@@ -183,7 +219,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4228,
             "ppid": 5788,
@@ -195,7 +231,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4280,
             "ppid": 8516,
@@ -207,7 +243,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4484,
             "ppid": 1504,
@@ -219,7 +255,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4504,
             "ppid": 1504,
@@ -231,7 +267,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4572,
             "ppid": 1504,
@@ -243,7 +279,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4616,
             "ppid": 1504,
@@ -255,7 +291,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4624,
             "ppid": 1504,
@@ -267,7 +303,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4812,
             "ppid": 1504,
@@ -279,7 +315,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4820,
             "ppid": 1504,
@@ -291,7 +327,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4828,
             "ppid": 1504,
@@ -303,7 +339,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4856,
             "ppid": 1504,
@@ -315,7 +351,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4864,
             "ppid": 1504,
@@ -327,7 +363,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4892,
             "ppid": 1504,
@@ -339,7 +375,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 4940,
+            "ppid": 19936,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 4996,
             "ppid": 1504,
@@ -351,7 +399,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5028,
             "ppid": 1504,
@@ -363,7 +411,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 5036,
+            "ppid": 9540,
+            "name": "msedge.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5188,
             "ppid": 1504,
@@ -375,7 +435,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5304,
             "ppid": 1504,
@@ -387,7 +447,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5336,
             "ppid": 1504,
@@ -399,7 +459,31 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 5352,
+            "ppid": 9540,
+            "name": "msedge.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 5416,
+            "ppid": 5788,
+            "name": "brave.exe",
+            "path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5684,
             "ppid": 1700,
@@ -411,7 +495,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5724,
             "ppid": 5788,
@@ -423,7 +507,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5788,
             "ppid": 9420,
@@ -435,7 +519,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 5912,
             "ppid": 9420,
@@ -447,7 +531,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 6036,
             "ppid": 5912,
@@ -459,7 +543,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 6288,
             "ppid": 15256,
@@ -471,7 +555,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 6496,
             "ppid": 5788,
@@ -483,7 +567,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 6504,
             "ppid": 1700,
@@ -495,19 +579,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 6544,
-            "ppid": 5788,
-            "name": "brave.exe",
-            "path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 6708,
             "ppid": 15900,
@@ -519,7 +591,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 7548,
             "ppid": 1504,
@@ -531,7 +603,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 7824,
             "ppid": 1700,
@@ -543,7 +615,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 7924,
+            "ppid": 17316,
+            "name": "Photos.exe",
+            "path": "C:\\Program Files\\WindowsApps\\Microsoft.Windows.Photos_2026.11060.2004.0_x64__8wekyb3d8bbwe\\Photos.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 7960,
             "ppid": 5912,
@@ -555,7 +639,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 7964,
             "ppid": 5788,
@@ -567,7 +651,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 8004,
             "ppid": 4812,
@@ -579,7 +663,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 8020,
             "ppid": 4828,
@@ -591,7 +675,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 8052,
+            "ppid": 12352,
+            "name": "SearchFilterHost.exe",
+            "path": "C:\\Windows\\System32\\SearchFilterHost.exe",
+            "username": null,
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 8272,
             "ppid": 15256,
@@ -603,7 +699,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 8376,
             "ppid": 10020,
@@ -615,7 +711,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 8448,
+            "ppid": 19936,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 8468,
             "ppid": 3084,
@@ -627,19 +735,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
-            "pid": 8592,
-            "ppid": 5788,
-            "name": "brave.exe",
-            "path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+            "pid": 8496,
+            "ppid": 19936,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
             "username": "VASANTHA\\nitin",
             "status": "running",
             "reason": "Process is not present in the configured allowlist.",
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 8756,
             "ppid": 18156,
@@ -651,7 +759,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 8948,
             "ppid": 1700,
@@ -663,7 +771,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 9144,
             "ppid": 5788,
@@ -675,7 +783,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 9300,
             "ppid": 4540,
@@ -687,19 +795,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 9476,
-            "ppid": 9928,
-            "name": "msedge.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 9500,
             "ppid": 7812,
@@ -711,7 +807,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 9540,
+            "ppid": 9928,
+            "name": "msedge.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 9856,
             "ppid": 1504,
@@ -723,7 +831,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 9880,
             "ppid": 7812,
@@ -735,19 +843,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
-            "pid": 9928,
-            "ppid": 17388,
-            "name": "msedge.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "pid": 9896,
+            "ppid": 19936,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
             "username": "VASANTHA\\nitin",
             "status": "running",
             "reason": "Process is not present in the configured allowlist.",
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 9992,
             "ppid": 7548,
@@ -759,7 +867,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 10020,
             "ppid": 5912,
@@ -771,7 +879,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 10064,
+            "ppid": 19936,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 10412,
             "ppid": 10272,
@@ -783,7 +903,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 10572,
+            "ppid": 12352,
+            "name": "SearchProtocolHost.exe",
+            "path": "C:\\Windows\\System32\\SearchProtocolHost.exe",
+            "username": null,
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 10652,
             "ppid": 1700,
@@ -795,7 +927,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 10888,
             "ppid": 1700,
@@ -807,19 +939,31 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
-            "pid": 11260,
-            "ppid": 1700,
-            "name": "ShellExperienceHost.exe",
-            "path": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe",
+            "pid": 11048,
+            "ppid": 15256,
+            "name": "Code.exe",
+            "path": "C:\\Users\\nitin\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
             "username": "VASANTHA\\nitin",
             "status": "running",
             "reason": "Process is not present in the configured allowlist.",
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 11260,
+            "ppid": 1700,
+            "name": "ShellExperienceHost.exe",
+            "path": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "stopped",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 11360,
             "ppid": 1700,
@@ -831,7 +975,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 11528,
             "ppid": 10312,
@@ -843,7 +987,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 11980,
+            "ppid": 9540,
+            "name": "msedge.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 12032,
             "ppid": 11528,
@@ -855,19 +1011,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 12168,
-            "ppid": 12352,
-            "name": "SearchFilterHost.exe",
-            "path": "C:\\Windows\\System32\\SearchFilterHost.exe",
-            "username": null,
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 12180,
             "ppid": 9420,
@@ -879,7 +1023,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 12340,
+            "ppid": 9540,
+            "name": "msedge.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 12352,
             "ppid": 1504,
@@ -891,7 +1047,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 12528,
             "ppid": 1700,
@@ -903,7 +1059,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 12720,
             "ppid": 5788,
@@ -915,7 +1071,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 12888,
             "ppid": 11528,
@@ -927,7 +1083,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 12912,
             "ppid": 11528,
@@ -939,7 +1095,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 13032,
             "ppid": 11528,
@@ -951,7 +1107,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 13184,
             "ppid": 11528,
@@ -963,7 +1119,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 13216,
             "ppid": 5788,
@@ -975,7 +1131,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 13356,
             "ppid": 5788,
@@ -987,19 +1143,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 13552,
-            "ppid": 9928,
-            "name": "msedge.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 13860,
             "ppid": 5788,
@@ -1011,7 +1155,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 13872,
             "ppid": 5788,
@@ -1023,7 +1167,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 13932,
             "ppid": 5788,
@@ -1035,7 +1179,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 14040,
             "ppid": 5788,
@@ -1047,7 +1191,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 14116,
             "ppid": 5788,
@@ -1059,7 +1203,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 14504,
             "ppid": 14456,
@@ -1071,19 +1215,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 14760,
-            "ppid": 9928,
-            "name": "msedge.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 14788,
             "ppid": 1700,
@@ -1095,7 +1227,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15032,
             "ppid": 1504,
@@ -1107,7 +1239,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15052,
             "ppid": 1700,
@@ -1119,7 +1251,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15140,
             "ppid": 2384,
@@ -1131,7 +1263,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15256,
             "ppid": 5912,
@@ -1143,7 +1275,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15488,
             "ppid": 9420,
@@ -1155,7 +1287,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15564,
             "ppid": 9420,
@@ -1167,7 +1299,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15900,
             "ppid": 15564,
@@ -1179,7 +1311,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15928,
             "ppid": 15900,
@@ -1191,7 +1323,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15940,
             "ppid": 17608,
@@ -1203,7 +1335,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 15976,
             "ppid": 5788,
@@ -1215,7 +1347,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 16244,
             "ppid": 15900,
@@ -1227,7 +1359,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 16252,
             "ppid": 15900,
@@ -1239,7 +1371,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 16352,
             "ppid": 15900,
@@ -1251,7 +1383,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 16392,
+            "ppid": 9420,
+            "name": "SnippingTool.exe",
+            "path": "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2602.49.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 16480,
             "ppid": 18804,
@@ -1263,7 +1407,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 16552,
             "ppid": 9420,
@@ -1275,7 +1419,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 16576,
             "ppid": 18156,
@@ -1287,19 +1431,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 16668,
-            "ppid": 1504,
-            "name": "elevation_service.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\151.0.4129.86\\elevation_service.exe",
-            "username": null,
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 17072,
             "ppid": 5788,
@@ -1311,7 +1443,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 17608,
             "ppid": 11032,
@@ -1323,19 +1455,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
-            "pid": 17640,
-            "ppid": 9928,
-            "name": "msedge.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "pid": 17616,
+            "ppid": 19936,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
             "username": "VASANTHA\\nitin",
             "status": "running",
             "reason": "Process is not present in the configured allowlist.",
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 17732,
             "ppid": 9420,
@@ -1347,19 +1479,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 17752,
-            "ppid": 9928,
-            "name": "msedge.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 17812,
             "ppid": 7812,
@@ -1371,7 +1491,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 17880,
             "ppid": 17732,
@@ -1383,7 +1503,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18068,
             "ppid": 1504,
@@ -1395,7 +1515,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18076,
             "ppid": 17732,
@@ -1407,7 +1527,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18084,
             "ppid": 17732,
@@ -1419,7 +1539,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18120,
             "ppid": 17732,
@@ -1431,7 +1551,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18152,
             "ppid": 7812,
@@ -1443,7 +1563,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18156,
             "ppid": 5912,
@@ -1455,19 +1575,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 18588,
-            "ppid": 1700,
-            "name": "backgroundTaskHost.exe",
-            "path": "C:\\Windows\\System32\\backgroundTaskHost.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "stopped",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18804,
             "ppid": 17812,
@@ -1479,7 +1587,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18836,
             "ppid": 15256,
@@ -1491,7 +1599,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18840,
             "ppid": 17608,
@@ -1503,7 +1611,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 18848,
             "ppid": 18804,
@@ -1515,7 +1623,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 19128,
             "ppid": 5912,
@@ -1527,7 +1635,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 19164,
             "ppid": 17608,
@@ -1539,7 +1647,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 19428,
             "ppid": 18804,
@@ -1551,7 +1659,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 19436,
             "ppid": 18804,
@@ -1563,7 +1671,19 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 19620,
+            "ppid": 9540,
+            "name": "msedge.exe",
+            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 19652,
             "ppid": 17608,
@@ -1575,7 +1695,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 19656,
             "ppid": 11032,
@@ -1587,7 +1707,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 19692,
             "ppid": 18804,
@@ -1599,31 +1719,43 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
-            "pid": 20468,
-            "ppid": 5788,
-            "name": "brave.exe",
-            "path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+            "pid": 19936,
+            "ppid": 9420,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
             "username": "VASANTHA\\nitin",
             "status": "running",
             "reason": "Process is not present in the configured allowlist.",
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
-            "pid": 20672,
+            "pid": 20132,
             "ppid": 12352,
-            "name": "SearchProtocolHost.exe",
-            "path": "C:\\Windows\\System32\\SearchProtocolHost.exe",
+            "name": "SearchFilterHost.exe",
+            "path": "C:\\Windows\\System32\\SearchFilterHost.exe",
             "username": null,
             "status": "running",
             "reason": "Process is not present in the configured allowlist.",
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
+            "severity": "MEDIUM",
+            "pid": 20140,
+            "ppid": 19936,
+            "name": "chrome.exe",
+            "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+            "username": "VASANTHA\\nitin",
+            "status": "running",
+            "reason": "Process is not present in the configured allowlist.",
+            "alert_type": "UNAUTHORIZED_PROCESS"
+        },
+        {
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 20972,
             "ppid": 17608,
@@ -1635,7 +1767,7 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 21016,
             "ppid": 17608,
@@ -1647,24 +1779,12 @@
             "alert_type": "UNAUTHORIZED_PROCESS"
         },
         {
-            "timestamp": "2026-08-17 17:11:00",
+            "timestamp": "2026-08-17 18:00:11",
             "severity": "MEDIUM",
             "pid": 21080,
             "ppid": 5912,
             "name": "Code.exe",
             "path": "C:\\Users\\nitin\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
-            "username": "VASANTHA\\nitin",
-            "status": "running",
-            "reason": "Process is not present in the configured allowlist.",
-            "alert_type": "UNAUTHORIZED_PROCESS"
-        },
-        {
-            "timestamp": "2026-08-17 17:11:00",
-            "severity": "MEDIUM",
-            "pid": 21456,
-            "ppid": 9928,
-            "name": "msedge.exe",
-            "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
             "username": "VASANTHA\\nitin",
             "status": "running",
             "reason": "Process is not present in the configured allowlist.",
