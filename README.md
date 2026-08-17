@@ -2,6 +2,14 @@
 
 A defensive Windows endpoint monitoring project designed to detect suspicious process behavior, abnormal parent-child relationships, unauthorized processes, and potentially suspicious Windows services.
 
+## Live Deployed Dashboard
+
+The project dashboard is deployed on Streamlit Community Cloud:
+
+https://windows-service-process-monitor.streamlit.app/
+
+[Open the live dashboard](https://windows-service-process-monitor.streamlit.app/)
+
 ## Project Overview
 
 The Windows Service & Process Monitoring Agent collects endpoint telemetry from a Windows system and analyzes it using rule-based security detections.
