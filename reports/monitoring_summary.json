@@ -1,0 +1,13 @@
+{
+    "timestamp": "2026-08-17 17:11:00",
+    "processes_detected": 251,
+    "services_detected": 293,
+    "process_relationship_alerts": 0,
+    "service_alerts": 0,
+    "unauthorized_process_alerts": 139,
+    "total_alerts": 139,
+    "critical_alerts": 0,
+    "high_alerts": 0,
+    "medium_alerts": 139,
+    "low_alerts": 0
+}
