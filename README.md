@@ -248,8 +248,6 @@ The following screenshots demonstrate the implementation and output of the monit
 
 ![Security Monitoring Dashboard](screenshots/07-dashboard.png)
 
-> The screenshots are loaded from the `screenshots/` folder. Upload the seven image files there with exactly the filenames shown above.
-
 ## Defensive Security Use Case
 
 This project demonstrates endpoint visibility and rule-based detection techniques commonly used in defensive security environments.
