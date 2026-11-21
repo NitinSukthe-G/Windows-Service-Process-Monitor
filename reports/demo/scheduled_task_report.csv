@@ -1,0 +1,3 @@
+timestamp,task_path,name,state,command,exe,user,sig_status,signer
+,\,GoogleUpdateTask,Ready,"""C:\Program Files\Google\Update\GoogleUpdate.exe"" /c",C:\Program Files\Google\Update\GoogleUpdate.exe,SYSTEM,Valid,Google LLC
+,\,SystemHealthSync,Ready,powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File C:\Users\Public\sync.ps1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,SYSTEM,Valid,Microsoft Corporation

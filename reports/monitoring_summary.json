@@ -1,13 +1,111 @@
 {
-    "timestamp": "2026-08-17 18:00:11",
-    "processes_detected": 267,
-    "services_detected": 293,
-    "process_relationship_alerts": 0,
-    "service_alerts": 0,
-    "unauthorized_process_alerts": 149,
-    "total_alerts": 149,
-    "critical_alerts": 0,
-    "high_alerts": 0,
-    "medium_alerts": 149,
-    "low_alerts": 0
+  "timestamp": "2026-11-21 23:17:09",
+  "version": "2.0.0",
+  "mode": "live",
+  "is_admin": false,
+  "scan_duration_seconds": 18.22,
+  "baseline_status": "loaded",
+  "signatures_checked": true,
+  "processes_detected": 316,
+  "services_detected": 295,
+  "startup_entries_detected": 15,
+  "scheduled_tasks_detected": 97,
+  "process_relationship_alerts": 1,
+  "service_alerts": 1,
+  "unauthorized_process_alerts": 1,
+  "masquerading_alerts": 0,
+  "command_line_alerts": 0,
+  "persistence_alerts": 0,
+  "correlation_alerts": 0,
+  "total_alerts": 3,
+  "critical_alerts": 0,
+  "high_alerts": 0,
+  "medium_alerts": 0,
+  "low_alerts": 3,
+  "suppressed_alerts": 0,
+  "alerts_by_type": {
+    "PROCESS_RELATIONSHIP": 1,
+    "UNAUTHORIZED_PROCESS": 1,
+    "SERVICE": 1
+  },
+  "top_rules": [
+    {
+      "rule_id": "PROC-001",
+      "name": "Suspicious parent-child process chain",
+      "count": 1
+    },
+    {
+      "rule_id": "PROC-003",
+      "name": "Unsigned process not on the allowlist",
+      "count": 1
+    },
+    {
+      "rule_id": "SVC-004",
+      "name": "Modified service since baseline",
+      "count": 1
+    }
+  ],
+  "mitre_techniques": [
+    {
+      "id": "T1189",
+      "technique": "Drive-by Compromise",
+      "tactic": "Initial Access",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "technique": "Masquerading",
+      "tactic": "Defense Evasion",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "technique": "Create or Modify System Process: Windows Service",
+      "tactic": "Persistence",
+      "count": 1
+    }
+  ],
+  "risky_entities": [
+    {
+      "entity": "proc:25252:cmd.exe",
+      "name": "cmd.exe",
+      "pid": 25252,
+      "score": 2,
+      "rules": [
+        "PROC-001"
+      ]
+    },
+    {
+      "entity": "proc:6008:grep.exe",
+      "name": "grep.exe",
+      "pid": 6008,
+      "score": 2,
+      "rules": [
+        "PROC-003"
+      ]
+    },
+    {
+      "entity": "svc:bits",
+      "name": "BITS",
+      "pid": null,
+      "score": 2,
+      "rules": [
+        "SVC-004"
+      ]
+    }
+  ],
+  "process_trust": {
+    "Allowlisted": 3,
+    "Unverified": 2,
+    "Signed": 297,
+    "Unsigned": 1,
+    "Packaged app": 13
+  },
+  "rules_loaded": 30,
+  "severity_order": [
+    "CRITICAL",
+    "HIGH",
+    "MEDIUM",
+    "LOW"
+  ]
 }

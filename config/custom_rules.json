@@ -1,0 +1,9 @@
+{
+  "_comment": "Analyst overrides. Add approved software, extra blacklist entries and suppressions here. All process names are case-insensitive.",
+  "allowed_processes": [],
+  "blacklisted_processes": [],
+  "trusted_service_names": [],
+  "suppressions": [
+    {"_example": "Uncomment/copy to silence a known-good finding", "rule_id": "PROC-003", "name": "example-tool.exe"}
+  ]
+}

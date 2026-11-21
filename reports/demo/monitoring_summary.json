@@ -1,0 +1,363 @@
+{
+  "timestamp": "2026-11-21 23:31:50",
+  "version": "2.0.0",
+  "mode": "demo",
+  "is_admin": false,
+  "scan_duration_seconds": 0.01,
+  "baseline_status": "synthetic baseline",
+  "signatures_checked": true,
+  "processes_detected": 23,
+  "services_detected": 10,
+  "startup_entries_detected": 3,
+  "scheduled_tasks_detected": 2,
+  "process_relationship_alerts": 4,
+  "service_alerts": 16,
+  "unauthorized_process_alerts": 14,
+  "masquerading_alerts": 3,
+  "command_line_alerts": 5,
+  "persistence_alerts": 6,
+  "correlation_alerts": 12,
+  "total_alerts": 60,
+  "critical_alerts": 18,
+  "high_alerts": 28,
+  "medium_alerts": 13,
+  "low_alerts": 1,
+  "suppressed_alerts": 0,
+  "alerts_by_type": {
+    "CORRELATION": 12,
+    "UNAUTHORIZED_PROCESS": 14,
+    "COMMAND_LINE": 5,
+    "MASQUERADING": 3,
+    "SERVICE": 16,
+    "PROCESS_RELATIONSHIP": 4,
+    "PERSISTENCE": 6
+  },
+  "top_rules": [
+    {
+      "rule_id": "CORR-001",
+      "name": "Multiple indicators on one entity",
+      "count": 12
+    },
+    {
+      "rule_id": "PROC-008",
+      "name": "Suspicious command line",
+      "count": 5
+    },
+    {
+      "rule_id": "SVC-003",
+      "name": "New service since baseline",
+      "count": 5
+    },
+    {
+      "rule_id": "PROC-002",
+      "name": "Process running from user-writable directory",
+      "count": 5
+    },
+    {
+      "rule_id": "PROC-003",
+      "name": "Unsigned process not on the allowlist",
+      "count": 4
+    },
+    {
+      "rule_id": "PROC-001",
+      "name": "Suspicious parent-child process chain",
+      "count": 2
+    },
+    {
+      "rule_id": "PROC-007",
+      "name": "Unexpected parent for critical system process",
+      "count": 2
+    },
+    {
+      "rule_id": "SVC-001",
+      "name": "Service binary in user-writable directory",
+      "count": 2
+    },
+    {
+      "rule_id": "PERS-002",
+      "name": "Startup entry in suspicious location or command",
+      "count": 2
+    },
+    {
+      "rule_id": "PERS-001",
+      "name": "New startup entry since baseline",
+      "count": 2
+    }
+  ],
+  "mitre_techniques": [
+    {
+      "id": "T1036",
+      "technique": "Masquerading",
+      "tactic": "Defense Evasion",
+      "count": 9
+    },
+    {
+      "id": "T1543.003",
+      "technique": "Create or Modify System Process: Windows Service",
+      "tactic": "Persistence",
+      "count": 8
+    },
+    {
+      "id": "T1547.001",
+      "technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+      "tactic": "Persistence",
+      "count": 4
+    },
+    {
+      "id": "T1553.002",
+      "technique": "Subvert Trust Controls: Code Signing",
+      "tactic": "Defense Evasion",
+      "count": 3
+    },
+    {
+      "id": "T1036.005",
+      "technique": "Masquerading: Match Legitimate Name or Location",
+      "tactic": "Defense Evasion",
+      "count": 2
+    },
+    {
+      "id": "T1055",
+      "technique": "Process Injection",
+      "tactic": "Defense Evasion",
+      "count": 2
+    },
+    {
+      "id": "T1059.001",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "tactic": "Execution",
+      "count": 2
+    },
+    {
+      "id": "T1003",
+      "technique": "OS Credential Dumping",
+      "tactic": "Credential Access",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "technique": "Inhibit System Recovery",
+      "tactic": "Impact",
+      "count": 1
+    },
+    {
+      "id": "T1003.001",
+      "technique": "OS Credential Dumping: LSASS Memory",
+      "tactic": "Credential Access",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "technique": "User Execution: Malicious File",
+      "tactic": "Execution",
+      "count": 1
+    },
+    {
+      "id": "T1505.003",
+      "technique": "Server Software Component: Web Shell",
+      "tactic": "Persistence",
+      "count": 1
+    },
+    {
+      "id": "T1574.010",
+      "technique": "Hijack Execution Flow: Services File Permissions Weakness",
+      "tactic": "Privilege Escalation",
+      "count": 1
+    },
+    {
+      "id": "T1574.011",
+      "technique": "Hijack Execution Flow: Services Registry Permissions Weakness",
+      "tactic": "Privilege Escalation",
+      "count": 1
+    },
+    {
+      "id": "T1036.004",
+      "technique": "Masquerading: Masquerade Task or Service",
+      "tactic": "Defense Evasion",
+      "count": 1
+    },
+    {
+      "id": "T1543",
+      "technique": "Create or Modify System Process",
+      "tactic": "Persistence",
+      "count": 1
+    },
+    {
+      "id": "T1036.007",
+      "technique": "Masquerading: Double File Extension",
+      "tactic": "Defense Evasion",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "technique": "System Services: Service Execution",
+      "tactic": "Execution",
+      "count": 1
+    },
+    {
+      "id": "T1021.002",
+      "technique": "Remote Services: SMB/Windows Admin Shares",
+      "tactic": "Lateral Movement",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "technique": "Scheduled Task/Job: Scheduled Task",
+      "tactic": "Persistence",
+      "count": 1
+    },
+    {
+      "id": "T1136.001",
+      "technique": "Create Account: Local Account",
+      "tactic": "Persistence",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "technique": "Obfuscated Files or Information",
+      "tactic": "Defense Evasion",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "technique": "Indicator Removal: File Deletion",
+      "tactic": "Defense Evasion",
+      "count": 1
+    },
+    {
+      "id": "T1574.009",
+      "technique": "Hijack Execution Flow: Path Interception by Unquoted Path",
+      "tactic": "Privilege Escalation",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "technique": "Indicator Removal",
+      "tactic": "Defense Evasion",
+      "count": 1
+    }
+  ],
+  "risky_entities": [
+    {
+      "entity": "proc:3200:mimikatz.exe",
+      "name": "mimikatz.exe",
+      "pid": 3200,
+      "score": 32,
+      "rules": [
+        "PROC-002",
+        "PROC-003",
+        "PROC-004",
+        "PROC-008"
+      ]
+    },
+    {
+      "entity": "proc:3100:svchost.exe",
+      "name": "svchost.exe",
+      "pid": 3100,
+      "score": 24,
+      "rules": [
+        "PROC-002",
+        "PROC-005",
+        "PROC-007"
+      ]
+    },
+    {
+      "entity": "svc:winupdatehelper",
+      "name": "WinUpdateHelper",
+      "pid": null,
+      "score": 21,
+      "rules": [
+        "SVC-001",
+        "SVC-003",
+        "SVC-009"
+      ]
+    },
+    {
+      "entity": "svc:legacyagent",
+      "name": "LegacyAgent",
+      "pid": null,
+      "score": 21,
+      "rules": [
+        "SVC-001",
+        "SVC-004",
+        "SVC-009"
+      ]
+    },
+    {
+      "entity": "proc:3500:invoice.pdf.exe",
+      "name": "invoice.pdf.exe",
+      "pid": 3500,
+      "score": 19,
+      "rules": [
+        "PROC-002",
+        "PROC-003",
+        "PROC-012"
+      ]
+    },
+    {
+      "entity": "proc:3600:updater.exe",
+      "name": "updater.exe",
+      "pid": 3600,
+      "score": 18,
+      "rules": [
+        "PROC-002",
+        "PROC-011",
+        "PROC-013"
+      ]
+    },
+    {
+      "entity": "svc:vendorsync",
+      "name": "VendorSync",
+      "pid": null,
+      "score": 17,
+      "rules": [
+        "SVC-002",
+        "SVC-003",
+        "SVC-010"
+      ]
+    },
+    {
+      "entity": "proc:3300:lsass.exe",
+      "name": "lsass.exe",
+      "pid": 3300,
+      "score": 16,
+      "rules": [
+        "PROC-007",
+        "PROC-009"
+      ]
+    },
+    {
+      "entity": "proc:3110:scvhost.exe",
+      "name": "scvhost.exe",
+      "pid": 3110,
+      "score": 16,
+      "rules": [
+        "PROC-002",
+        "PROC-003",
+        "PROC-006"
+      ]
+    },
+    {
+      "entity": "svc:backuphelper",
+      "name": "BackupHelper",
+      "pid": null,
+      "score": 15,
+      "rules": [
+        "SVC-003",
+        "SVC-008"
+      ]
+    }
+  ],
+  "process_trust": {
+    "Allowlisted": 1,
+    "Signed": 16,
+    "Unsigned": 5,
+    "Invalid signature": 1
+  },
+  "rules_loaded": 30,
+  "severity_order": [
+    "CRITICAL",
+    "HIGH",
+    "MEDIUM",
+    "LOW"
+  ]
+}

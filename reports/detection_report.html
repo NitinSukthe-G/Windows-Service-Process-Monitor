@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Windows Service &amp; Process Monitor - Detection Report</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f4f6f9;color:#1c2430}
+header{background:#0f2742;color:#fff;padding:28px 40px} header h1{margin:0 0 6px;font-size:26px}
+header p{margin:0;opacity:.8} main{padding:24px 40px;max-width:1280px;margin:auto}
+h2{margin:32px 0 12px;font-size:19px;border-bottom:2px solid #d5dce6;padding-bottom:6px}
+.cards{display:flex;gap:16px;flex-wrap:wrap} .card{background:#fff;border-radius:8px;padding:16px 24px;min-width:130px;box-shadow:0 1px 3px #0002}
+.card .n{font-size:34px;font-weight:700} .card .l{color:#566} .meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px}
+.meta div{background:#fff;border-radius:8px;padding:10px 16px;box-shadow:0 1px 3px #0002} .meta b{display:block;font-size:20px}
+.bar{display:flex;align-items:center;gap:10px;margin:6px 0} .bl{width:70px} .bt{flex:1;background:#e3e8ef;height:14px;border-radius:7px;overflow:hidden}
+.bt span{display:block;height:100%} .bv{width:40px;text-align:right}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px #0002;font-size:14px}
+th{background:#e8edf4;text-align:left;padding:9px 12px} td{padding:9px 12px;border-top:1px solid #e6eaf0;vertical-align:top}
+.sev{color:#fff;padding:2px 9px;border-radius:10px;font-size:12px;font-weight:700} small{color:#667} .mono{font-family:Consolas,monospace;word-break:break-all}
+.note{background:#fff3cd;border:1px solid #ecc94b;padding:10px 16px;border-radius:8px;margin-bottom:16px} .muted{color:#667}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px} @media(max-width:900px){.two{grid-template-columns:1fr}}
+footer{text-align:center;color:#778;padding:24px;font-size:13px}
+</style></head><body>
+<header><h1>Windows Service &amp; Process Monitoring - Detection Report</h1>
+<p>Scan 2026-11-21 23:17:09 &middot; mode: live &middot; agent v2.0.0 &middot; 30 detection rules</p></header>
+<main>
+<h2>Executive summary</h2>
+<div class="cards"><div class="card" style="border-top:4px solid #b42318"><div class="n">0</div><div class="l">Critical</div></div><div class="card" style="border-top:4px solid #e8590c"><div class="n">0</div><div class="l">High</div></div><div class="card" style="border-top:4px solid #d99a00"><div class="n">0</div><div class="l">Medium</div></div><div class="card" style="border-top:4px solid #2f7d32"><div class="n">3</div><div class="l">Low</div></div></div>
+<div class="meta">
+<div><b>316</b>processes</div><div><b>295</b>services</div>
+<div><b>15</b>startup entries</div><div><b>97</b>scheduled tasks</div>
+<div><b>3</b>total alerts</div><div><b>18.22s</b>scan time</div>
+<div><b>No</b>elevated</div></div>
+<h2>Severity distribution</h2><div class="bar"><span class="bl">Critical</span><span class="bt"><span style="width:0.0%;background:#b42318"></span></span><span class="bv">0</span></div><div class="bar"><span class="bl">High</span><span class="bt"><span style="width:0.0%;background:#e8590c"></span></span><span class="bv">0</span></div><div class="bar"><span class="bl">Medium</span><span class="bt"><span style="width:0.0%;background:#d99a00"></span></span><span class="bv">0</span></div><div class="bar"><span class="bl">Low</span><span class="bt"><span style="width:100.0%;background:#2f7d32"></span></span><span class="bv">3</span></div>
+<div class="two"><div><h2>Top triggered rules</h2><table><tr><th>Rule</th><th>Name</th><th>Hits</th></tr><tr><td>PROC-001</td><td>Suspicious parent-child process chain</td><td>1</td></tr><tr><td>PROC-003</td><td>Unsigned process not on the allowlist</td><td>1</td></tr><tr><td>SVC-004</td><td>Modified service since baseline</td><td>1</td></tr></table></div>
+<div><h2>Highest-risk entities</h2><table><tr><th>Name</th><th>PID</th><th>Risk</th><th>Rules</th></tr><tr><td>cmd.exe</td><td>25252</td><td>2</td><td>PROC-001</td></tr><tr><td>grep.exe</td><td>6008</td><td>2</td><td>PROC-003</td></tr><tr><td>BITS</td><td>-</td><td>2</td><td>SVC-004</td></tr></table></div></div>
+<h2>MITRE ATT&amp;CK coverage of findings</h2>
+<table><tr><th>Technique</th><th>Name</th><th>Tactic</th><th>Alerts</th></tr><tr><td>T1189</td><td>Drive-by Compromise</td><td>Initial Access</td><td>1</td></tr><tr><td>T1036</td><td>Masquerading</td><td>Defense Evasion</td><td>1</td></tr><tr><td>T1543.003</td><td>Create or Modify System Process: Windows Service</td><td>Persistence</td><td>1</td></tr></table>
+<h2>Alerts (highest risk first)</h2>
+<table><tr><th>Severity</th><th>Rule</th><th>Entity</th><th>Details</th><th>MITRE</th></tr><tr><td><span class="sev" style="background:#2f7d32">LOW</span></td><td>PROC-001</td><td><b>cmd.exe</b><br><small>PID 25252</small></td><td>Browser native-messaging host launched through a shell (usually a benign extension helper): brave.exe -&gt; cmd.exe<br><small class="mono">explorer.exe(13928) &gt; brave.exe(4580) &gt; cmd.exe(25252)</small></td><td>T1189<br><small>Initial Access</small></td></tr><tr><td><span class="sev" style="background:#2f7d32">LOW</span></td><td>PROC-003</td><td><b>grep.exe</b><br><small>PID 6008</small></td><td>Process is not on the allowlist and has no digital signature.<br><small class="mono">grep.exe(6008)</small></td><td>T1036<br><small>Defense Evasion</small></td></tr><tr><td><span class="sev" style="background:#2f7d32">LOW</span></td><td>SVC-004</td><td><b>BITS</b></td><td>Service &#x27;BITS&#x27; changed since baseline (start_mode: &#x27;Auto&#x27; -&gt; &#x27;Manual&#x27;).<br><small class="mono">C:\Windows\System32\svchost.exe -k netsvcs -p</small></td><td>T1543.003<br><small>Persistence</small></td></tr></table>
+</main><footer>Generated by the Windows Service &amp; Process Monitoring Agent. Alerts are indicators for investigation, not proof of compromise.</footer>
+</body></html>

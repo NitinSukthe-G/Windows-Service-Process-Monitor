@@ -1,427 +1,364 @@
+"""Windows Service & Process Monitoring Agent - command-line entry point.
+
+Examples
+    python agent/monitor.py                      single full scan, writes reports/
+    python agent/monitor.py --watch              continuous monitoring
+    python agent/monitor.py --demo               safe synthetic attack scenario -> reports/demo/
+    python agent/monitor.py --view tree          print the process tree
+    python agent/monitor.py --update-baseline    accept the current services/startup as normal
+    python agent/monitor.py --list-rules         show the detection catalog
+"""
+
+import argparse
+import json
+import logging
 import os
 import sys
-import json
-import csv
+import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
+from pathlib import Path
 
-# Allow imports from the agent directory
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from process_monitor import get_process_details
-from process_tree import get_process_tree, analyze_process_relationships
-from service_monitor import get_windows_services
-from service_detection import analyze_services
-from unauthorized_process import analyze_processes
-from alert_manager import save_all_alerts
+from agent import config  # noqa: E402
+from agent.baseline import build_baseline, load_baseline, save_baseline  # noqa: E402
+from agent.engine import attach_enrichment, build_summary, collect_paths, run_detection  # noqa: E402
+from agent.reporting import Redactor, append_history, write_reports  # noqa: E402
+from agent.rules_data import RULE_CATALOG, SEVERITY_RANK  # noqa: E402
 
+log = logging.getLogger("monitor")
 
-REPORT_DIR = "reports"
-
-
-def ensure_report_directory():
-    os.makedirs(REPORT_DIR, exist_ok=True)
+COLORS = {"CRITICAL": "\033[1;37;41m", "HIGH": "\033[1;31m", "MEDIUM": "\033[33m", "LOW": "\033[32m"}
+RESET, BOLD, DIM = "\033[0m", "\033[1m", "\033[2m"
+USE_COLOR = sys.stdout.isatty() or bool(os.environ.get("FORCE_COLOR"))
 
 
-def save_process_report(processes):
-    output_file = os.path.join(
-        REPORT_DIR,
-        "process_report.csv"
-    )
-
-    fieldnames = [
-        "timestamp",
-        "pid",
-        "ppid",
-        "name",
-        "path",
-        "username",
-        "status",
-    ]
-
-    with open(
-        output_file,
-        "w",
-        newline="",
-        encoding="utf-8"
-    ) as file:
-
-        writer = csv.DictWriter(
-            file,
-            fieldnames=fieldnames
-        )
-
-        writer.writeheader()
-        writer.writerows(processes)
-
-    return output_file
+def paint(text, code):
+    return f"{code}{text}{RESET}" if USE_COLOR else text
 
 
-def save_service_report(services):
-    output_file = os.path.join(
-        REPORT_DIR,
-        "service_report.csv"
-    )
-
-    fieldnames = [
-        "timestamp",
-        "name",
-        "display_name",
-        "state",
-        "start_mode",
-        "start_name",
-        "path",
-    ]
-
-    with open(
-        output_file,
-        "w",
-        newline="",
-        encoding="utf-8"
-    ) as file:
-
-        writer = csv.DictWriter(
-            file,
-            fieldnames=fieldnames
-        )
-
-        writer.writeheader()
-        writer.writerows(services)
-
-    return output_file
+def setup_logging(verbose=False):
+    config.LOG_DIR.mkdir(parents=True, exist_ok=True)
+    logfile = config.LOG_DIR / f"monitor-{datetime.now():%Y-%m-%d}.log"
+    handlers = [logging.FileHandler(logfile, encoding="utf-8")]
+    logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO, handlers=handlers, force=True,
+                        format="%(asctime)s %(levelname)-7s %(name)s: %(message)s")
+    return logfile
 
 
-def generate_summary(
-    processes,
-    process_alerts,
-    service_alerts,
-    unauthorized_alerts,
-    services,
-):
-    critical_alerts = 0
-    high_alerts = 0
-    medium_alerts = 0
-    low_alerts = 0
+def enable_ansi():
+    global USE_COLOR
+    if os.name == "nt":
+        os.system("")  # enables VT sequences in modern Windows terminals
+    USE_COLOR = USE_COLOR and os.environ.get("NO_COLOR") is None
 
-    all_alerts = (
-        process_alerts
-        + service_alerts
-        + unauthorized_alerts
-    )
 
-    for alert in all_alerts:
+# ---------------------------------------------------------------------------
+# Scanner
+# ---------------------------------------------------------------------------
 
-        severity = (
-            alert.get("severity", "LOW")
-            .upper()
-        )
+class Scanner:
+    def __init__(self, args):
+        self.args = args
+        self.custom = config.load_custom_rules()
+        self.ioc = config.load_ioc_hashes()
+        self.redactor = Redactor(enabled=not args.no_redact)
+        self.enricher = None
+        self.deep = {}              # cached services/startup/tasks between watch cycles
+        self.known_alerts = set()
 
-        if severity == "CRITICAL":
-            critical_alerts += 1
+    def _enricher(self):
+        if self.enricher is None:
+            from agent.enrichment import Enricher
+            self.enricher = Enricher(check_signatures=not self.args.no_signatures)
+        return self.enricher
 
-        elif severity == "HIGH":
-            high_alerts += 1
+    def scan(self, deep=True):
+        from agent import collectors
 
-        elif severity == "MEDIUM":
-            medium_alerts += 1
+        started = time.time()
+        snapshot = {"processes": collectors.collect_processes()}
+        if deep or not self.deep:
+            # The slow collectors are PowerShell subprocesses, so threads give a real speed-up.
+            def services_and_acls():
+                services = collectors.collect_services()
+                acl = {} if self.args.quick else collectors.check_service_acls(services)
+                return services, acl
 
+            with ThreadPoolExecutor(max_workers=3) as pool:
+                f_services = pool.submit(services_and_acls)
+                f_tasks = pool.submit(lambda: [] if self.args.no_tasks else collectors.collect_scheduled_tasks())
+                f_startup = pool.submit(collectors.collect_startup_entries)
+                snapshot["services"], snapshot["service_acl"] = f_services.result()
+                snapshot["tasks"] = f_tasks.result()
+                snapshot["startup"] = f_startup.result()
+            self.deep = {k: snapshot[k] for k in ("services", "startup", "tasks", "service_acl")}
         else:
-            low_alerts += 1
+            snapshot.update(self.deep)
 
-    return {
-        "timestamp": datetime.now().strftime(
-            "%Y-%m-%d %H:%M:%S"
-        ),
+        enrichment = self._enricher().enrich(collect_paths(snapshot))
+        attach_enrichment(snapshot, enrichment)
 
-        "processes_detected": len(
-            processes
-        ),
+        baseline = load_baseline()
+        status = "loaded"
+        if baseline is None:
+            baseline = build_baseline(snapshot)
+            save_baseline(baseline)
+            status = "initialised (first run - drift rules start next scan)"
+            baseline_for_rules = None
+        else:
+            baseline_for_rules = baseline
+        alerts, suppressed = run_detection(snapshot, baseline_for_rules, self.custom, self.ioc)
 
-        "services_detected": len(
-            services
-        ),
+        summary = build_summary(snapshot, alerts, mode="live", suppressed=suppressed,
+                                duration=time.time() - started, is_admin=collectors.is_admin(),
+                                baseline_status=status, signatures_checked=not self.args.no_signatures)
+        return snapshot, alerts, summary
 
-        "process_relationship_alerts": len(
-            process_alerts
-        ),
-
-        "service_alerts": len(
-            service_alerts
-        ),
-
-        "unauthorized_process_alerts": len(
-            unauthorized_alerts
-        ),
-
-        "total_alerts": len(
-            all_alerts
-        ),
-
-        "critical_alerts": critical_alerts,
-
-        "high_alerts": high_alerts,
-
-        "medium_alerts": medium_alerts,
-
-        "low_alerts": low_alerts,
-    }
+    def publish(self, snapshot, alerts, summary, out_dir):
+        files = write_reports(out_dir, snapshot, alerts, summary, self.redactor)
+        append_history(out_dir / "scan_history.jsonl", summary, self.redactor)
+        for alert in alerts:
+            if alert["severity"] in ("CRITICAL", "HIGH"):
+                log.warning("ALERT [%s] %s %s | %s", alert["severity"], alert["rule_id"], alert.get("name"), alert["reason"])
+            else:
+                log.info("ALERT [%s] %s %s | %s", alert["severity"], alert["rule_id"], alert.get("name"), alert["reason"])
+        return files
 
 
-def save_json_report(summary):
-    output_file = os.path.join(
-        REPORT_DIR,
-        "monitoring_summary.json"
-    )
+# ---------------------------------------------------------------------------
+# Console output
+# ---------------------------------------------------------------------------
 
-    with open(
-        output_file,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            summary,
-            file,
-            indent=4
-        )
-
-    return output_file
-
-
-def print_banner():
-
+def print_banner(title):
     print("\n" + "=" * 100)
-    print(
-        "WINDOWS SERVICE & PROCESS MONITORING AGENT"
-    )
+    print(paint(title, BOLD))
     print("=" * 100)
 
 
 def print_summary(summary):
-
-    print("\n" + "=" * 100)
-    print("MONITORING SUMMARY")
-    print("=" * 100)
-
-    print(
-        "Timestamp                    :",
-        summary["timestamp"]
-    )
-
-    print(
-        "Processes detected           :",
-        summary["processes_detected"]
-    )
-
-    print(
-        "Services detected            :",
-        summary["services_detected"]
-    )
-
-    print(
-        "Process relationship alerts  :",
-        summary[
-            "process_relationship_alerts"
-        ]
-    )
-
-    print(
-        "Service alerts               :",
-        summary[
-            "service_alerts"
-        ]
-    )
-
-    print(
-        "Unauthorized process alerts  :",
-        summary[
-            "unauthorized_process_alerts"
-        ]
-    )
-
-    print(
-        "Total alerts                 :",
-        summary["total_alerts"]
-    )
-
-    print(
-        "Critical alerts              :",
-        summary["critical_alerts"]
-    )
-
-    print(
-        "High severity alerts         :",
-        summary["high_alerts"]
-    )
-
-    print(
-        "Medium severity alerts       :",
-        summary["medium_alerts"]
-    )
-
-    print(
-        "Low severity alerts          :",
-        summary["low_alerts"]
-    )
+    print_banner("MONITORING SUMMARY")
+    rows = [
+        ("Timestamp", summary["timestamp"]), ("Mode", summary["mode"]),
+        ("Elevated (admin)", "yes" if summary["is_admin"] else "no (some processes/ACLs not visible)"),
+        ("Processes / services", f"{summary['processes_detected']} / {summary['services_detected']}"),
+        ("Startup entries / tasks", f"{summary['startup_entries_detected']} / {summary['scheduled_tasks_detected']}"),
+        ("Baseline", summary["baseline_status"]),
+        ("Signatures verified", "yes" if summary["signatures_checked"] else "no"),
+        ("Scan duration", f"{summary['scan_duration_seconds']}s"),
+    ]
+    for key, value in rows:
+        print(f"  {key:<26}: {value}")
+    print()
+    for sev in ("CRITICAL", "HIGH", "MEDIUM", "LOW"):
+        print("  " + paint(f"{sev:<9}", COLORS[sev]) + f": {summary[sev.lower() + '_alerts']}")
+    print(f"  {'TOTAL':<9}: {summary['total_alerts']}   (suppressed: {summary['suppressed_alerts']})")
 
 
-def main():
+def print_alerts(alerts, min_severity="LOW", limit=25):
+    floor = SEVERITY_RANK[min_severity]
+    shown = [a for a in alerts if SEVERITY_RANK[a["severity"]] >= floor]
+    print_banner(f"TOP ALERTS ({min(limit, len(shown))} of {len(shown)} at >= {min_severity})")
+    if not shown:
+        print("  No alerts at this severity.")
+        return
+    for alert in shown[:limit]:
+        pid = f" PID {alert['pid']}" if alert.get("pid") is not None else ""
+        print(f"  {paint(' ' + alert['severity'] + ' ', COLORS[alert['severity']])} {alert['rule_id']}  "
+              f"{paint(str(alert.get('name')), BOLD)}{pid}  {paint('[' + alert['mitre_id'] + ']', DIM) if alert['mitre_id'] != '-' else ''}")
+        print(f"      {alert['reason']}")
+        lineage = (alert.get("evidence") or {}).get("lineage")
+        if lineage and alert["rule_id"].startswith("PROC"):
+            print(paint(f"      chain: {lineage}", DIM))
 
-    print_banner()
 
-    ensure_report_directory()
+def print_outputs(files):
+    print_banner("REPORTS WRITTEN")
+    for key, path in files.items():
+        print(f"  {key:<16}: {os.path.relpath(path, config.PROJECT_ROOT)}")
 
-    # -------------------------------------------------------
-    # 1. Collect processes
-    # -------------------------------------------------------
 
-    print(
-        "\n[1/4] Collecting Windows processes..."
-    )
+# ---------------------------------------------------------------------------
+# Views
+# ---------------------------------------------------------------------------
 
-    processes = get_process_details()
+def view_tree(processes):
+    from agent.process_rules import ProcessIndex
+    index = ProcessIndex(processes)
+    roots = [p for p in processes if index.parent_of(p) is None]
+    print_banner("PROCESS TREE")
 
-    process_report = save_process_report(
-        processes
-    )
+    def walk(proc, prefix="", last=True, depth=0):
+        branch = "" if depth == 0 else ("└─ " if last else "├─ ")
+        print(f"{prefix}{branch}{proc.get('name')} ({proc['pid']})")
+        kids = sorted(index.children.get(proc["pid"], []), key=lambda p: p["pid"])
+        for i, kid in enumerate(kids):
+            walk(kid, prefix + ("" if depth == 0 else ("   " if last else "│  ")), i == len(kids) - 1, depth + 1)
 
-    print(
-        f"      {len(processes)} processes collected."
-    )
+    for root in sorted(roots, key=lambda p: p["pid"]):
+        walk(root)
+    print(f"\n{len(processes)} processes")
 
-    print(
-        f"      Process report saved to: "
-        f"{process_report}"
-    )
 
-    # -------------------------------------------------------
-    # 2. Analyze process relationships
-    # -------------------------------------------------------
+def run_view(args):
+    from agent import collectors
+    if args.view in ("processes", "tree"):
+        processes = collectors.collect_processes()
+        if args.view == "tree":
+            view_tree(processes)
+        else:
+            print_banner("WINDOWS PROCESSES")
+            print(f"{'PID':<8}{'PPID':<8}{'NAME':<34}{'USER':<30}")
+            for p in sorted(processes, key=lambda x: x["pid"]):
+                print(f"{p['pid']:<8}{p['ppid']:<8}{str(p['name'])[:32]:<34}{str(p['username'] or '')[:28]:<30}")
+            print(f"\n{len(processes)} processes")
+    elif args.view == "services":
+        services = collectors.collect_services()
+        print_banner("WINDOWS SERVICES")
+        print(f"{'NAME':<34}{'STATE':<10}{'START':<10}{'ACCOUNT':<28}")
+        for s in services:
+            print(f"{str(s['name'])[:32]:<34}{str(s['state']):<10}{str(s['start_mode']):<10}{str(s['start_name'] or '')[:26]:<28}")
+        print(f"\n{len(services)} services")
+    elif args.view == "startup":
+        entries = collectors.collect_startup_entries()
+        print_banner("STARTUP ENTRIES")
+        for e in entries:
+            print(f"{e['location']:<28}{e['name'][:30]:<32}{e['command'][:70]}")
+        print(f"\n{len(entries)} entries")
 
-    print(
-        "\n[2/4] Analyzing parent-child relationships..."
-    )
 
-    process_tree = get_process_tree()
+def list_rules():
+    print_banner(f"DETECTION RULES ({len(RULE_CATALOG)})")
+    for rule_id, meta in RULE_CATALOG.items():
+        print(f"  {rule_id:<9} {meta['name']:<52} {meta['technique']:<10} {meta['tactic']}")
 
-    process_relationship_alerts = (
-        analyze_process_relationships(
-            process_tree
-        )
-    )
 
-    print(
-        f"      {len(process_relationship_alerts)} "
-        "parent-child alerts detected."
-    )
+# ---------------------------------------------------------------------------
+# Modes
+# ---------------------------------------------------------------------------
 
-    # -------------------------------------------------------
-    # 3. Audit Windows services
-    # -------------------------------------------------------
+def run_demo(args):
+    from agent.demo import build_demo
+    from agent.engine import label_processes
 
-    print(
-        "\n[3/4] Auditing Windows services..."
-    )
-
-    services = get_windows_services()
-
-    service_report = save_service_report(
-        services
-    )
-
-    service_alerts = analyze_services(
-        services
-    )
-
-    print(
-        f"      {len(services)} services checked."
-    )
-
-    print(
-        f"      Service report saved to: "
-        f"{service_report}"
-    )
-
-    print(
-        f"      {len(service_alerts)} "
-        "service alerts detected."
-    )
-
-    # -------------------------------------------------------
-    # 4. Unauthorized process detection
-    # -------------------------------------------------------
-
-    print(
-        "\n[4/4] Detecting unauthorized/suspicious processes..."
-    )
-
-    unauthorized_alerts = (
-        analyze_processes(
-            processes
-        )
-    )
-
-    print(
-        f"      {len(unauthorized_alerts)} "
-        "unauthorized/suspicious process "
-        "alerts detected."
-    )
-
-    # -------------------------------------------------------
-    # Save combined alerts
-    # -------------------------------------------------------
-
-    alert_file = save_all_alerts(
-        process_relationship_alerts,
-        service_alerts,
-        unauthorized_alerts,
-    )
-
-    # -------------------------------------------------------
-    # Create summary
-    # -------------------------------------------------------
-
-    summary = generate_summary(
-        processes=processes,
-        process_alerts=process_relationship_alerts,
-        service_alerts=service_alerts,
-        unauthorized_alerts=unauthorized_alerts,
-        services=services,
-    )
-
-    # -------------------------------------------------------
-    # Save summary
-    # -------------------------------------------------------
-
-    summary_file = save_json_report(
-        summary
-    )
-
-    # -------------------------------------------------------
-    # Print summary
-    # -------------------------------------------------------
-
+    snapshot, baseline = build_demo()
+    scanner = Scanner(args)
+    label_processes(snapshot, scanner.custom)
+    started = time.time()
+    alerts, suppressed = run_detection(snapshot, baseline, {}, set())
+    summary = build_summary(snapshot, alerts, mode="demo", suppressed=suppressed, duration=time.time() - started,
+                            baseline_status="synthetic baseline", signatures_checked=True)
+    files = scanner.publish(snapshot, alerts, summary, config.DEMO_REPORT_DIR)
+    print_banner("DEMO MODE - synthetic attack scenarios (nothing is executed)")
     print_summary(summary)
+    print_alerts(alerts, args.min_severity, args.top)
+    print_outputs(files)
+    return alerts
 
-    print("\n" + "=" * 100)
-    print("MONITORING COMPLETE")
-    print("=" * 100)
 
-    print(
-        f"Process report : {process_report}"
-    )
+def run_once(args):
+    print_banner("WINDOWS SERVICE & PROCESS MONITORING AGENT")
+    if args.update_baseline:
+        from agent import collectors
+        snapshot = {"services": collectors.collect_services(), "startup": collectors.collect_startup_entries(),
+                    "tasks": collectors.collect_scheduled_tasks()}
+        path = save_baseline(build_baseline(snapshot))
+        print(f"Baseline updated: {os.path.relpath(path, config.PROJECT_ROOT)} "
+              f"({len(snapshot['services'])} services, {len(snapshot['startup'])} startup entries, {len(snapshot['tasks'])} tasks)")
+        return []
 
-    print(
-        f"Service report : {service_report}"
-    )
+    print("[1/4] Collecting processes, services, startup entries and scheduled tasks...")
+    scanner = Scanner(args)
+    if not args.no_signatures:
+        print("[2/4] Verifying digital signatures (first run is slower; results are cached)...")
+    snapshot, alerts, summary = scanner.scan(deep=True)
+    print("[3/4] Applying detection rules, correlation and MITRE mapping...")
+    files = scanner.publish(snapshot, alerts, summary, config.REPORT_DIR)
+    print("[4/4] Reports written.")
+    print_summary(summary)
+    print_alerts(alerts, args.min_severity, args.top)
+    print_outputs(files)
+    return alerts
 
-    print(
-        f"Summary report : {summary_file}"
-    )
 
-    print(
-        f"Alert report   : {alert_file}"
-    )
+def run_watch(args):
+    enable_ansi()
+    scanner = Scanner(args)
+    cycle, previous = 0, {}
+    print_banner("CONTINUOUS MONITORING")
+    print(f"Interval {args.interval}s | deep scan (services/startup/tasks) every {config.DEEP_SCAN_EVERY_N_CYCLES} cycles | CTRL+C to stop")
+    try:
+        while True:
+            cycle += 1
+            deep = (cycle - 1) % config.DEEP_SCAN_EVERY_N_CYCLES == 0
+            snapshot, alerts, summary = scanner.scan(deep=deep)
+            scanner.publish(snapshot, alerts, summary, config.REPORT_DIR)
+
+            current = {(p["pid"], p.get("create_time")): p for p in snapshot["processes"]}
+            new_procs = [p for key, p in current.items() if previous and key not in previous]
+            previous = current
+            fresh = [a for a in alerts if a["alert_id"] not in scanner.known_alerts]
+            scanner.known_alerts.update(a["alert_id"] for a in alerts)
+
+            stamp = datetime.now().strftime("%H:%M:%S")
+            print(f"\n[{stamp}] cycle {cycle} ({'deep' if deep else 'fast'}) - {summary['processes_detected']} processes, "
+                  f"{summary['total_alerts']} alerts "
+                  f"(C{summary['critical_alerts']} H{summary['high_alerts']} M{summary['medium_alerts']} L{summary['low_alerts']}), "
+                  f"{len(new_procs)} new process(es), {summary['scan_duration_seconds']}s")
+            for proc in new_procs[:10]:
+                log.info("NEW_PROCESS pid=%s ppid=%s name=%s path=%s", proc["pid"], proc["ppid"], proc["name"], proc["path"])
+                print(f"   + {proc['name']} (PID {proc['pid']}, parent {proc['ppid']})")
+            for alert in fresh[:10]:
+                if SEVERITY_RANK[alert["severity"]] >= SEVERITY_RANK[args.min_severity]:
+                    print("   ! " + paint(f" NEW {alert['severity']} ", COLORS[alert["severity"]]) +
+                          f" {alert['rule_id']} {alert.get('name')} - {alert['reason']}")
+            time.sleep(args.interval)
+    except KeyboardInterrupt:
+        print("\nMonitoring stopped by user.")
+
+
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser(description="Windows Service & Process Monitoring Agent",
+                                     formatter_class=argparse.RawDescriptionHelpFormatter, epilog=__doc__)
+    parser.add_argument("--watch", action="store_true", help="run continuously")
+    parser.add_argument("--interval", type=int, default=config.DEFAULT_INTERVAL_SECONDS, help="seconds between watch scans")
+    parser.add_argument("--demo", action="store_true", help="run the safe synthetic attack demo (reports/demo/)")
+    parser.add_argument("--view", choices=["processes", "tree", "services", "startup"], help="print raw inventory and exit")
+    parser.add_argument("--update-baseline", action="store_true", help="accept current services/startup/tasks as the new baseline")
+    parser.add_argument("--list-rules", action="store_true", help="print the detection rule catalog")
+    parser.add_argument("--no-signatures", action="store_true", help="skip Authenticode verification (faster)")
+    parser.add_argument("--no-tasks", action="store_true", help="skip scheduled-task enumeration")
+    parser.add_argument("--quick", action="store_true", help="skip the service ACL audit")
+    parser.add_argument("--no-redact", action="store_true", help="keep real user/computer names in reports")
+    parser.add_argument("--min-severity", default="MEDIUM", choices=list(SEVERITY_RANK), help="console severity floor")
+    parser.add_argument("--top", type=int, default=25, help="alerts shown in the console")
+    parser.add_argument("--fail-on", choices=list(SEVERITY_RANK), help="exit code 2 when an alert at/above this severity exists")
+    parser.add_argument("-v", "--verbose", action="store_true")
+    return parser.parse_args(argv)
+
+
+def main(argv=None):
+    args = parse_args(argv)
+    enable_ansi()
+    if args.list_rules:
+        list_rules()
+        return 0
+    setup_logging(args.verbose)
+    if os.name != "nt" and not args.demo:
+        print("This agent collects Windows telemetry. Use --demo on other platforms.")
+        return 1
+    if args.view:
+        run_view(args)
+        return 0
+    if args.watch:
+        run_watch(args)
+        return 0
+    alerts = run_demo(args) if args.demo else run_once(args)
+    if args.fail_on and any(SEVERITY_RANK[a["severity"]] >= SEVERITY_RANK[args.fail_on] for a in alerts):
+        return 2
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

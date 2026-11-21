@@ -1,3 +1,4 @@
-psutil
-pandas
-streamlit
+psutil>=5.9
+pandas>=2.0
+streamlit>=1.50
+altair>=5.0

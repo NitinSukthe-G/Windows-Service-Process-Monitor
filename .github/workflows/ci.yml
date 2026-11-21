@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Safe demo scenario (synthetic attacks) runs end to end
+        run: python agent/monitor.py --demo --min-severity CRITICAL --top 3
+      - name: Demo must be flagged when --fail-on is used (exit code 2)
+        shell: bash
+        run: |
+          set +e
+          python agent/monitor.py --demo --fail-on CRITICAL > /dev/null
+          test $? -eq 2
+      - name: Live scan smoke test (no signature checks)
+        run: python agent/monitor.py --no-signatures --quick --no-tasks
+      - name: Dashboard renders without errors
+        run: python -c "from streamlit.testing.v1 import AppTest; at=AppTest.from_file('dashboard/app.py', default_timeout=120).run(); assert not at.exception, at.exception"

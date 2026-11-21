@@ -1,0 +1,4 @@
+# Known-bad SHA-256 hashes, one per line. Lines starting with '#' are comments.
+# Any running process whose executable hash matches is reported as PROC-014 (CRITICAL).
+# Example (do not uncomment - placeholder):
+# 0000000000000000000000000000000000000000000000000000000000000000   # sample.exe - threat report link

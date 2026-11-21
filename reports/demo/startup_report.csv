@@ -1,0 +1,4 @@
+timestamp,location,name,command,exe,sig_status,signer,sha256
+,HKCU\Run,OneDrive,"""C:\Program Files\Microsoft OneDrive\OneDrive.exe"" /background",C:\Program Files\Microsoft OneDrive\OneDrive.exe,Valid,Microsoft Corporation,
+,HKCU\Run,WindowsUpdateCheck,C:\Users\analyst\AppData\Roaming\Microsoft\upd.exe,C:\Users\analyst\AppData\Roaming\Microsoft\upd.exe,NotSigned,,
+,HKLM\Run,Dropper,C:\Windows\Temp\x.exe,C:\Windows\Temp\x.exe,NotSigned,,
