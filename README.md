@@ -12,9 +12,11 @@ interactive dashboard.
 
 ## Walkthrough video
 
-[![Watch the 90-second walkthrough](docs/demo-thumbnail.png)](Windows_Service_Process_Monitor_walkthrough.mp4)
 
-**[▶ Watch the narrated walkthrough (MP4, 1080p, 90 s)](Windows_Service_Process_Monitor_walkthrough.mp4)**
+
+https://github.com/user-attachments/assets/9e40553f-25e2-419d-bd1a-db0be43c882f
+
+
 
 A guided tour of the real application, in seven scenes:
 
